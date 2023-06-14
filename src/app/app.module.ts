@@ -3,16 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InfoPageComponent } from './info-page/info-page.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
+import { ListPageComponent } from './list-page/list-page.component';
+import { AngularMaterialModule } from './shared/angular-material.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InfoPageComponent,
+    DetailsPageComponent,
+    ListPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
